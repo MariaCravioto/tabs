@@ -1,9 +1,9 @@
 *{
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 body{
@@ -18,42 +18,42 @@ h1{
 /*
 *menu
 */
-.nav{
-  width: 800px;
-  max-width: 90%;
-  margin: 150px auto;
-}
-
 ul.tabs{
-  width: 100%;
   background-color: #87CEFA;
-  list-style: none;
   display: flex;
+  list-style: none;
+  width: 100%;
 }
 
 ul.tabs li{
   width: 18%;
 }
 
+ul.tabs li a{
+  color: #FFFFFF;
+  display: block;
+  font-size: 16px;
+  padding: 20px 0;
+  text-align: center;
+  text-decoration: none;
+}
+
 .active{
   background-color: #0984CC;
 }
 
-ul.tabs li a{
-  color: #FFFFFF;
-  text-decoration: none;
-  font-size: 16px;
-  display: block;
-  padding: 20px 0;
-  text-align: center;
+.nav{
+  margin: 150px auto;
+  max-width: 90%;
+  width: 800px;
 }
 
 /*
 *sections
 */
 .text{
-  width: 100%;
   background-color: #FFFFFF;
+  width: 100%;
 }
 
 .text article{
@@ -69,9 +69,9 @@ ul.tabs li a{
 */
 @media screen and (max-width: 700px){
   ul.tabs li{
-    width: none;
     flex-basis: 0;
     flex-grow: 1;
+    width: none;
   }
 }
 
